@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">lifecalculator</string>
+    <string name="discount">Discount(%off) :</string>
+    <string name="percentage">Percentage(%)</string>
+    <string-array name="temp">
+        <item>C°</item>
+        <item>F°</item>
+        <item>K</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradiant"
+    android:orientation="vertical"
+    android:paddingTop="14dp"
+    tools:context="com.example.ganesh.lifecalculator.Age">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="AGE"
+            android:textSize="38dp"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/startdate"
+            android:layout_marginStart="12dp"
+            android:text="Date of Birth :"
+            android:textColor="@color/colorAccent"
+            android:textSize="26dp" />
+
+        <TextView
+            android:id="@+id/startdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView8"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="100dp"
+            android:layout_toRightOf="@+id/textView9"
+            android:ems="10"
+            android:hint="  click to select date"
+            android:inputType="date"
+            android:textColor="@color/colorAccent"
+            android:textSize="21dp" />
+
+        <Button
+            android:id="@+id/age_cal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView9"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:background="@color/colorAccent"
+            android:text="CALCULATE"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/age_cal"
+            android:textColor="@color/colorAmber_A400"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:id="@+id/textView11"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

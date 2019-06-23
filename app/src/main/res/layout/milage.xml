@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradiant"
+    android:orientation="vertical"
+    android:paddingTop="14dp"
+    tools:context="com.example.ganesh.lifecalculator.Milage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/milage_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="MILAGE"
+            android:textColor="@color/colorAccent"
+            android:textSize="38dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/milage_text_previous_reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/milage_title"
+            android:layout_below="@+id/milage_title"
+            android:layout_marginTop="19dp"
+            android:text="Previous Meter Reading "
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/milage_text_current_reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/premeter"
+            android:layout_toStartOf="@+id/cost"
+            android:text="Current Meter reading    "
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+
+            android:id="@+id/milage_fuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cost"
+            android:layout_toStartOf="@+id/fuel"
+            android:text="Fuel Quantity                    "
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            tools:layout_below="@+id/milage_text_current_reading"
+            tools:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/milage_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cost"
+            android:layout_alignBottom="@+id/cost"
+            android:layout_alignStart="@+id/milage_fuel"
+            android:text="Fuel Cost                           "
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            tools:layout_below="@+id/milage_fuel"
+            tools:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/premeter"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/milage_text_previous_reading"
+            android:layout_alignBottom="@+id/milage_text_previous_reading"
+            android:layout_toEndOf="@+id/milage_text_previous_reading"
+            android:hint="in (km)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp"
+            tools:layout_toEndOf="@+id/milage_text_previous_reading" />
+
+        <EditText
+            android:id="@+id/curr_meter"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/milage_text_previous_reading"
+            android:layout_toEndOf="@+id/milage_text_previous_reading"
+            android:hint="in (kms)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/fuel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/curr_meter"
+            android:layout_below="@+id/milage_text_current_reading"
+            android:hint="in (ltrs)"
+            android:textColor="@color/colorAccent"
+            android:inputType="numberDecimal"
+            android:textSize="22dp" />
+
+        <EditText
+            android:id="@+id/cost"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fuel"
+            android:layout_toRightOf="@+id/milage_cost"
+            android:hint="in (Rs)"
+            android:textColor="@color/colorAccent"
+            android:inputType="numberDecimal"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/milage_text_current_reading"
+            android:layout_below="@+id/milage_cal"
+            android:layout_marginTop="16dp"
+            android:text="Milage "
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/milage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView11"
+            android:layout_alignBottom="@+id/textView11"
+            android:layout_alignStart="@+id/milage_title"
+            android:textColor="@color/colorAmber_A400"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/milage_text_previous_reading"
+            android:layout_below="@+id/textView11"
+            android:layout_marginTop="14dp"
+            android:text="Travel cost"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/trvlcost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView13"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/textView13"
+            android:textColor="@color/colorAmber_A400"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/milage_cal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cost"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="44dp"
+            android:background="@color/colorAccent"
+            android:text="CALCULATE"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

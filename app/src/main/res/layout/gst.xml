@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_gradiant"
+    android:orientation="vertical"
+    android:paddingTop="14dp"
+    tools:context="com.example.ganesh.lifecalculator.Gst">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="GST"
+            android:textStyle="bold"
+            android:textSize="38dp"
+            android:id="@+id/gst"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/gst"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:text="Enter Amount                 "
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_gst"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView12"
+            android:layout_alignBottom="@+id/textView12"
+            android:layout_toEndOf="@+id/textView12"
+            android:inputType="numberDecimal" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView12"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="29dp"
+            android:text="Enter GST percentage  "
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText_gstpercent"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView13"
+            android:layout_alignBottom="@+id/textView13"
+            android:layout_toEndOf="@+id/textView13"
+            android:inputType="numberDecimal" />
+
+
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/gst_cal"
+            android:layout_below="@id/textView13"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@color/colorAccent"
+            android:text="CALCULATE"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"/>
+
+
+        <TextView
+            android:id="@+id/textfinalprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/gst_cal"
+            android:layout_marginTop="18dp"
+            android:text="Final Price              "
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:layout_alignBaseline="@+id/textfinalprice"
+            android:layout_alignBottom="@+id/textfinalprice"
+            android:layout_toEndOf="@+id/textfinalprice"
+            android:textColor="@color/colorAmber_A400"
+            android:id="@+id/finalprice"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/textfinalprice"
+            android:layout_marginTop="18dp"
+            android:text="Amount for GST    "
+            android:textColor="@color/colorAccent"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:id="@+id/textamountgst"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:layout_alignBaseline="@+id/textamountgst"
+            android:layout_alignBottom="@+id/textamountgst"
+            android:layout_toEndOf="@+id/textamountgst"
+            android:textColor="@color/colorAmber_A400"
+            android:id="@+id/gstamount"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
