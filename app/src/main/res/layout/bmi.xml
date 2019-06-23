@@ -7,7 +7,7 @@
     android:background="@drawable/blue_gradiant"
     android:orientation="vertical"
     android:paddingTop="14dp"
-    tools:context="com.example.ganesh.lifecalculator.Bmi">
+    tools:context="com.ganesh.gecko.Bmi">
 
     <EditText
         android:layout_width="wrap_content"

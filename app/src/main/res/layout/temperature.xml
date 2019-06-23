@@ -7,7 +7,7 @@
     android:background="@drawable/blue_gradiant"
     android:orientation="vertical"
     android:paddingTop="14dp"
-    tools:context="com.example.ganesh.lifecalculator.Temperature">
+    tools:context="com.ganesh.gecko.Temperature">
 
 
     <RelativeLayout

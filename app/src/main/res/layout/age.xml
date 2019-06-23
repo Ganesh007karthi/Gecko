@@ -7,7 +7,7 @@
     android:background="@drawable/blue_gradiant"
     android:orientation="vertical"
     android:paddingTop="14dp"
-    tools:context="com.example.ganesh.lifecalculator.Age">
+    tools:context="com.ganesh.gecko.Age">
 
     <RelativeLayout
         android:layout_width="match_parent"
